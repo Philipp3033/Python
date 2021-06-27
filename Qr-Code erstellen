@@ -1,0 +1,11 @@
+# importiere QR Modul
+import qrcode
+
+# zu verschlüsselnde Daten
+data = "URL/Text"
+
+# verschlüssele Daten mit der make-Funktion
+img = qrcode.make(data)
+
+# speichere bild 
+img.save('qr_code.png')
